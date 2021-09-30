@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,300&family=Josefin+Slab:ital,wght@0,200;0,300;1,200;1,300&family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+.hamburguer{
+   /* background-color: red;*/
+    width: 3rem;
+    height: 4rem;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.line{
+    width: 100%;
+    height: .1rem;
+    background-color: white;
+    box-shadow: 0.1rem 0.1rem 1px #000;
+
+}
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.img-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.8);
+}
+
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    animation: zoom 25s;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.banner{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    right: 15%;
+    text-align: center;
+}
+
+.banner h1{
+    color: aliceblue;
+    font-size: 4rem;
+    font-family: "Baloo Da 2", serif;
+    font-weight: 200;
+    text-shadow: .3rem .4rem 2px rgba(0,0,0,.4);
+    line-height: 4rem;
+    margin-bottom: 2rem;
+    
+}
+
+.banner p{
+    font-family: "Baloo Da 2", serif;
+    color: aliceblue;
+    font-size: 1.5rem;
+    text-shadow: .2rem .2rem rgba(0,0,0,.4);
+    margin-bottom:  2rem;
+}
+
+.banner button{
+    font-family: "Muli", serif;
+    color: white;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    background: #0052D4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 1rem 2rem 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.banner button:hover{
+    opacity: 0.5;
+}
+
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -20rem
+
+}
+
+.sidebar.show-menu{
+   right: 0;
+
+}
+.menu{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu-item{
+    text-align: center;
+    margin-bottom: 1rem;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.menu-link{
+    font-family: "Muli", serif;
+    font-size: 2rem;
+    color: #626364;
+    transition: color 1s;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu-link:hover{
+    color: #156dff;
+:    
+}
+
+.social-media{
+    background-color: rgb(red, green, blue);
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
